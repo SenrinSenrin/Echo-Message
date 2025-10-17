@@ -61,7 +61,15 @@ export default function ChatPage() {
             </div>
           )}
         </div>
+
       </div>
+       <div className="text-center mt-4">
+          <span className="text-gray-600">
+            No account? 
+            <a href="/login" className="text-blue-500 hover:underline font-medium">Register</a> | 
+            <a href="/login" className="text-blue-500 hover:underline font-medium">Login</a>
+          </span>
+        </div>
     </AppShell>
   );
 }

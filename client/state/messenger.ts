@@ -1,7 +1,7 @@
 import { Chat, FriendRequest, FriendRequestStatus, Message, User } from "@shared/api";
 import { useSyncExternalStore } from "react";
 
-const STORAGE_KEY = "nebula_messenger_state_v1";
+const STORAGE_KEY = "echo_message_v1";
 
 export interface MessengerState {
   users: Record<string, User>;

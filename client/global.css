@@ -3,8 +3,8 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
+@tailwind utilities; 
+ 
 @layer base {
   /**
    * Tailwind CSS theme
@@ -93,7 +93,12 @@
     --sidebar-ring: 260 90% 70%;
   }
 }
-
+@theme inline {
+  --shadow-input:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}
 @layer base {
   * {
     @apply border-border;
@@ -116,4 +121,5 @@
     overflow-x: auto;
     white-space: pre;
   }
+  
 }
