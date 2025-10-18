@@ -3,11 +3,17 @@
   functions = "netlify/functions"
   publish = "dist/spa"
 
-
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  
+
+# Redirect all API requests to your serverless API
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# Redirect all other routes to your SPA index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
